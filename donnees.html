@@ -644,14 +644,19 @@ body.garde .dispo{margin-top:12px}
 .portes button[aria-pressed="true"] .pfl{transform:rotate(90deg)}
 /* l'air du portail : tant qu'aucune porte n'est choisie, un vide volontaire
    separe les cartes du pied de page sombre */
-body.garde:not(.p0):not(.p1):not(.p2):not(.p3):not(.pvu):not(.tout) .page{
+body.garde:not(.p0):not(.p1):not(.p2):not(.p3):not(.p4):not(.pvu):not(.tout) .page{
    padding-bottom:48px}
-body.garde:not(.p0):not(.p1):not(.p2):not(.p3):not(.pvu):not(.tout) footer.pied{
+body.garde:not(.p0):not(.p1):not(.p2):not(.p3):not(.p4):not(.pvu):not(.tout) footer.pied{
    display:none}
 /* le menu des sections n'a de sens qu'une fois un parcours ouvert : avant le
    choix, l'arrivee ne montre que l'identite et les portes */
-body.garde:not(.p0):not(.p1):not(.p2):not(.p3):not(.pvu):not(.tout) .snav{
+body.garde:not(.p0):not(.p1):not(.p2):not(.p3):not(.p4):not(.pvu):not(.tout) .snav{
    display:none}
+.offre-guide{margin:14px 0 0;font-size:15px;padding:9px 0 9px 14px;
+   border-left:3px solid var(--or)}
+.offre-guide a{color:var(--encre);border:0}
+.offre-guide b{color:var(--or);font-weight:700}
+.offre-guide a:hover{border-bottom:1px solid var(--or)}
 .ptout{margin:12px 0 0;text-align:right}
 .ptout a{font-size:12.5px;color:var(--muet);border-bottom:1px solid var(--grille)}
 .ptout a:hover{color:var(--encre);border-color:var(--or)}
@@ -686,46 +691,50 @@ body.garde:not(.p0):not(.p1):not(.p2):not(.p3):not(.pvu):not(.tout) .snav{
 /* LE PORTAIL : sous le heros, rien ne s'affiche avant le choix d'une porte ;
    la selection revele les groupes de SON parcours, en fondu. Les compteurs CSS
    ne comptent pas les sections masquees : la numerotation suit le parcours. */
-body.garde:not(.p0):not(.p1):not(.p2):not(.p3):not(.tout)
+body.garde:not(.p0):not(.p1):not(.p2):not(.p3):not(.p4):not(.tout)
    [data-grp]:not(.gvu){display:none}
 body.p1 [data-grp="quand"],body.p1 [data-grp="livre"],
 body.p1 [data-grp="releve"],body.p1 [data-grp="kit"],
 body.p2 [data-grp="quand"],body.p2 [data-grp="livre"],
 body.p2 [data-grp="releve"],
 body.p3 [data-grp="quand"],body.p3 [data-grp="livre"],
-body.p3 [data-grp="kit"]{display:none}
+body.p3 [data-grp="kit"],
+body.p4 [data-grp="quand"],body.p4 [data-grp="livre"],
+body.p4 [data-grp="kit"]{display:none}
 body.p0 #ctcTypezone,body.p1 #ctcTypezone,body.p2 #ctcTypezone,
-body.p3 #ctcTypezone{display:none}
-body.p0 .kg-form,body.p2 .kg-form,body.p3 .kg-form{display:none}
+body.p3 #ctcTypezone,body.p4 #ctcTypezone{display:none}
+body.p0 .kg-form,body.p2 .kg-form,body.p4 .kg-form{display:none}
 body.p0 [data-grp="guides"],body.p2 [data-grp="guides"],
-body.p3 [data-grp="guides"]{display:none}
+body.p4 [data-grp="guides"]{display:none}
 /* le menu des sections ne propose QUE les sections du parcours ouvert */
 body.p1 .snav{display:none}
 body.p2 .snav a:not([href="#kit"]),
-body.p3 .snav a:not([href="#releve"]){display:none}
+body.p3 .snav a:not([href="#guides"]):not([href="#releve"]),
+body.p4 .snav a:not([href="#releve"]){display:none}
 /* les titres d'entree du flux : un seul visible */
 .fin{display:none;margin-top:30px}
 .fin .chapeau{margin-bottom:0}
 .fin .gestes{margin-top:14px}
-body:not(.p0):not(.p1):not(.p2):not(.p3) .fin-def,
+body:not(.p0):not(.p1):not(.p2):not(.p3):not(.p4) .fin-def,
 body.p0 .fin-p0,body.p1 .fin-p1,body.p2 .fin-p2,
-body.p3 .fin-p3{display:block}
+body.p3 .fin-p3,body.p4 .fin-p4{display:block}
 .ft{display:none;margin:0 0 14px}
 .fi{display:none;margin:0 0 20px;color:var(--encre2);max-width:66ch}
-body.p3 .fi-p3{display:block}
-body:not(.p0):not(.p1):not(.p2):not(.p3) .ft-def,
-body.p0 .ft-p0,body.p1 .ft-p1,body.p2 .ft-p2,body.p3 .ft-p3{display:block}
+body.p4 .fi-p4{display:block}
+body:not(.p0):not(.p1):not(.p2):not(.p3):not(.p4) .ft-def,
+body.p0 .ft-p0,body.p1 .ft-p1,body.p2 .ft-p2,body.p3 .ft-p3,
+body.p4 .ft-p4{display:block}
 .ctc .ft{font-size:clamp(21px,2.6vw,27px);border-top:0;padding-top:0}
 .ctc-h{margin-top:30px}
 #ctc.tf:not(.infos) .qf-info,#ctc.tf:not(.infos) #ctcSuite{display:none}
 body.p0 [data-grp],body.p1 [data-grp],body.p2 [data-grp],
-body.p3 [data-grp],body.tout [data-grp],
+body.p3 [data-grp],body.p4 [data-grp],body.tout [data-grp],
 body.garde [data-grp].gvu{animation:pdevoile .55s ease both}
 @keyframes pdevoile{from{opacity:0;transform:translateY(16px)}
    to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){
    body.p0 [data-grp],body.p1 [data-grp],body.p2 [data-grp],
-   body.p3 [data-grp]{animation:none}}
+   body.p3 [data-grp],body.p4 [data-grp]{animation:none}}
 .pp{overflow:hidden;max-height:0;opacity:0;visibility:hidden;
    transform:translateY(10px);
    transition:max-height .5s ease,opacity .4s ease .06s,transform .4s ease .06s}
@@ -824,7 +833,7 @@ footer a{color:var(--muet)}
 </style>
 </head><body class="">
 <div id="prog"></div>
-<div class="bandeau" role="complementary" aria-label="Le marché du pilotage, aujourd'hui"><div class="piste"><i>2 860</i>missions de pilotage en ligne<s>&middot;</s><i>550 €</i>TJM médian affiché<s>&middot;</s><i>35 %</i>disparaissent en 7 jours<s>&middot;</s><i>9 %</i>de full remote<s>&middot;</s><i>680 €</i>le rôle le mieux payé<s>&middot;</s><i>22</i>plateformes suivies<s>&middot;</s><i>2 860</i>missions de pilotage en ligne<s>&middot;</s><i>550 €</i>TJM médian affiché<s>&middot;</s><i>35 %</i>disparaissent en 7 jours<s>&middot;</s><i>9 %</i>de full remote<s>&middot;</s><i>680 €</i>le rôle le mieux payé<s>&middot;</s><i>22</i>plateformes suivies<s>&middot;</s></div></div>
+<div class="bandeau" role="complementary" aria-label="Le marché du pilotage, aujourd'hui"><div class="piste"><i>2 962</i>missions de pilotage en ligne<s>&middot;</s><i>550 €</i>TJM médian affiché<s>&middot;</s><i>35 %</i>disparaissent en 7 jours<s>&middot;</s><i>8 %</i>de full remote<s>&middot;</s><i>680 €</i>le rôle le mieux payé<s>&middot;</s><i>22</i>plateformes suivies<s>&middot;</s><i>2 962</i>missions de pilotage en ligne<s>&middot;</s><i>550 €</i>TJM médian affiché<s>&middot;</s><i>35 %</i>disparaissent en 7 jours<s>&middot;</s><i>8 %</i>de full remote<s>&middot;</s><i>680 €</i>le rôle le mieux payé<s>&middot;</s><i>22</i>plateformes suivies<s>&middot;</s></div></div>
 <div class="page">
 <header>
   <div class="tete">
@@ -840,7 +849,7 @@ footer a{color:var(--muet)}
 <h1>Les chiffres du marché du pilotage, libres de citation</h1>
 <p class="chapeau">Je relève chaque matin les missions de pilotage publiées en France et j’en publie les mesures. Vous pouvez les citer, les reprendre dans un article ou une étude : c’est fait pour.</p>
 <div class="tjtab"><div class="tjr tjr-t"><span>Rôle</span>
-  <b>TJM médian</b><i>Annonces</i></div><div class="tjr"><span>directeur de projet</span><b>680 €</b><i>76</i></div><div class="tjr"><span>chef de projet</span><b>570 €</b><i>419</i></div><div class="tjr"><span>PMO</span><b>540 €</b><i>164</i></div><div class="tjr"><span>business analyst</span><b>550 €</b><i>153</i></div><div class="tjr"><span>product owner</span><b>550 €</b><i>214</i></div></div>
+  <b>TJM médian</b><i>Annonces</i></div><div class="tjr"><span>directeur de projet</span><b>680 €</b><i>80</i></div><div class="tjr"><span>chef de projet</span><b>570 €</b><i>435</i></div><div class="tjr"><span>PMO</span><b>540 €</b><i>167</i></div><div class="tjr"><span>business analyst</span><b>550 €</b><i>154</i></div><div class="tjr"><span>product owner</span><b>550 €</b><i>225</i></div></div>
 <p class="legende">Mesuré le 25 août 2026. Le détail par rôle :</p>
 
 <h2>Ce que je mesure</h2>
@@ -849,12 +858,12 @@ footer a{color:var(--muet)}
 <h2>Ce que vous pouvez en faire</h2>
 <p>Citer, reproduire les chiffres, en faire un graphique — y compris dans un contenu commercial. La seule condition est de nommer la source et de faire un lien vers la page d’où vient le chiffre. Aucune autorisation à demander, aucun formulaire à remplir.</p>
 
-<div class="citer"><h2>Comment citer ce chiffre</h2><p>Ces mesures sont libres de citation, y compris commerciale, à une condition : citer la source et faire un lien vers la page. Copiez la phrase ci-dessous.</p><blockquote id="citTexte">Selon le relevé du marché du pilotage de Claire Van De Sype (pmo-laboratory.com), mesuré le 25 août 2026, le TJM médian d’un chef de projet freelance en France s’établit à 570 € par jour, sur 419 annonces relevées.</blockquote><button type="button" class="cta2" onclick="citCopie(this)" data-ok="Copié.">Copier la citation</button></div><script>function citCopie(b){var t=document.getElementById("citTexte").textContent.trim();navigator.clipboard.writeText(t).then(function(){var v=b.textContent;b.textContent=b.getAttribute("data-ok");setTimeout(function(){b.textContent=v;},2500);});}</script>
+<div class="citer"><h2>Comment citer ce chiffre</h2><p>Ces mesures sont libres de citation, y compris commerciale, à une condition : citer la source et faire un lien vers la page. Copiez la phrase ci-dessous.</p><blockquote id="citTexte">Selon le relevé du marché du pilotage de Claire Van De Sype (pmo-laboratory.com), mesuré le 25 août 2026, le TJM médian d’un chef de projet freelance en France s’établit à 570 € par jour, sur 435 annonces relevées.</blockquote><button type="button" class="cta2" onclick="citCopie(this)" data-ok="Copié.">Copier la citation</button></div><script>function citCopie(b){var t=document.getElementById("citTexte").textContent.trim();navigator.clipboard.writeText(t).then(function(){var v=b.textContent;b.textContent=b.getAttribute("data-ok");setTimeout(function(){b.textContent=v;},2500);});}</script>
 
 <h2>Besoin d’un chiffre que je ne publie pas ?</h2>
 <p>Écrivez-moi : découpage par région, par secteur, par séniorité, série sur plusieurs mois. Si la mesure existe dans ma base, je vous l’envoie — sans contrepartie.</p>
 <div class="gestes"><a class="cta" href="mailto:claire.vandesype@pmo-laboratory.com?subject=Demande%20de%20donn%C3%A9e%20%E2%80%94%20relev%C3%A9%20du%20march%C3%A9&body=Bonjour%20Claire%2C%0A%0AObjet%20du%20contact%20%3A%20%0ANom%20%3A%20%0APr%C3%A9nom%20%3A%20%0ASoci%C3%A9t%C3%A9%20%3A%20%0AEmail%20%3A%20%0AT%C3%A9l%C3%A9phone%20%3A%20%0A%0AMon%20besoin%20en%20quelques%20lignes%20%3A%20%0A">Demander une donnée</a></div>
-<script type="application/ld+json">{"license": "https://pmo-laboratory.com/donnees.html", "isAccessibleForFree": true, "creator": {"@type": "Person", "name": "Claire Van De Sype", "url": "https://pmo-laboratory.com/", "sameAs": ["https://www.linkedin.com/in/claire-vandesype", "https://www.malt.fr/profile/clairevandesype"]}, "publisher": {"@type": "Organization", "name": "pmo-laboratory.com", "url": "https://pmo-laboratory.com/"}, "distribution": [{"@type": "DataDownload", "encodingFormat": "text/html", "contentUrl": "https://pmo-laboratory.com/donnees.html"}], "keywords": ["TJM", "tarif journalier moyen", "freelance", "pilotage de projet", "PMO", "chef de projet", "télétravail", "France", "marché"], "spatialCoverage": "France", "temporalCoverage": "2026-08-25", "datePublished": "2026-08-25", "dateModified": "2026-08-25", "inLanguage": "fr", "@context": "https://schema.org", "@type": "Dataset", "name": "Les chiffres du marché du pilotage, libres de citation", "description": "Je relève chaque matin les missions de pilotage publiées en France et j’en publie les mesures. Vous pouvez les citer, les reprendre dans un article ou une étude : c’est fait pour.", "url": "https://pmo-laboratory.com/donnees.html", "measurementTechnique": "Comment je mesure", "citation": "Selon le relevé du marché du pilotage de Claire Van De Sype (pmo-laboratory.com), mesuré le 25 août 2026, le TJM médian d’un chef de projet freelance en France s’établit à 570 € par jour, sur 419 annonces relevées.", "variableMeasured": [{"@type": "PropertyValue", "name": "TJM médian", "unitText": "EUR/jour"}, {"@type": "PropertyValue", "name": "Annonces", "unitText": "annonces"}]}</script>
+<script type="application/ld+json">{"license": "https://pmo-laboratory.com/donnees.html", "isAccessibleForFree": true, "creator": {"@type": "Person", "name": "Claire Van De Sype", "url": "https://pmo-laboratory.com/", "sameAs": ["https://www.linkedin.com/in/claire-vandesype", "https://www.malt.fr/profile/clairevandesype"]}, "publisher": {"@type": "Organization", "name": "pmo-laboratory.com", "url": "https://pmo-laboratory.com/"}, "distribution": [{"@type": "DataDownload", "encodingFormat": "text/html", "contentUrl": "https://pmo-laboratory.com/donnees.html"}], "keywords": ["TJM", "tarif journalier moyen", "freelance", "pilotage de projet", "PMO", "chef de projet", "télétravail", "France", "marché"], "spatialCoverage": "France", "temporalCoverage": "2026-08-25", "datePublished": "2026-08-25", "dateModified": "2026-08-25", "inLanguage": "fr", "@context": "https://schema.org", "@type": "Dataset", "name": "Les chiffres du marché du pilotage, libres de citation", "description": "Je relève chaque matin les missions de pilotage publiées en France et j’en publie les mesures. Vous pouvez les citer, les reprendre dans un article ou une étude : c’est fait pour.", "url": "https://pmo-laboratory.com/donnees.html", "measurementTechnique": "Comment je mesure", "citation": "Selon le relevé du marché du pilotage de Claire Van De Sype (pmo-laboratory.com), mesuré le 25 août 2026, le TJM médian d’un chef de projet freelance en France s’établit à 570 € par jour, sur 435 annonces relevées.", "variableMeasured": [{"@type": "PropertyValue", "name": "TJM médian", "unitText": "EUR/jour"}, {"@type": "PropertyValue", "name": "Annonces", "unitText": "annonces"}]}</script>
 
 </div>
 <footer class="pied">
@@ -957,7 +966,7 @@ function ctcType(){
   else{c.classList.remove('tf');}c.classList.remove('infos');}
  ctcSugg();}
 function porteTout(){
- document.body.classList.remove('p0','p1','p2','p3');
+ document.body.classList.remove('p0','p1','p2','p3','p4');
  document.body.classList.add('tout');
  var bs=document.querySelectorAll('.portes button');
  for(var j=0;j<bs.length;j++)bs[j].setAttribute('aria-pressed','false');
@@ -974,7 +983,7 @@ function porteMaj(i,b){
  var bs=b.parentNode.querySelectorAll('button');
  for(var j=0;j<bs.length;j++)bs[j].setAttribute('aria-pressed','false');
  for(var k=0;k<ps.length;k++)ps[k].classList.remove('on');
- document.body.classList.remove('p0','p1','p2','p3','tout');
+ document.body.classList.remove('p0','p1','p2','p3','p4','tout');
  var vs=document.querySelectorAll('.gvu');
  for(var m=0;m<vs.length;m++)vs[m].classList.remove('gvu');
  document.body.classList.remove('pvu');
@@ -983,7 +992,7 @@ function porteMaj(i,b){
  b.setAttribute('aria-pressed','true');
  document.body.classList.add('p'+i);
  /* la porte a qualifie le visiteur : on fixe le type de demande */
- var tp=['mission','formation','autre','autre'][i];
+ var tp=['mission','formation','autre','autre','autre'][i];
  var rt=document.querySelector('input[name=ctct][value='+tp+']');
  if(rt){rt.checked=true;if(typeof ctcType==='function')ctcType();}
  var pu=document.getElementById('ppuce');
@@ -1032,7 +1041,20 @@ document.addEventListener('DOMContentLoaded',function(){
   var a=ev.target.closest?ev.target.closest('a[href^="#"]'):null;
   if(!a)return;
   var id=a.getAttribute('href').slice(1);if(!id)return;
-  garRevele(id);});
+  var c=document.getElementById(id);if(!c)return;
+  /* ⚠ ON DESCEND NOUS-MEMES. Mesure du 25/08/2026 : reveler suffisait a AFFICHER la
+     section, pas a y amener — la cible etait en display:none au moment ou le
+     navigateur tentait son saut d'ancre, donc le saut ne faisait rien. Le visiteur
+     cliquait « Le guide du marche » et restait en haut de page, devant un lien qui
+     avait l'air casse. On previent le saut natif et on defile apres le devoilement. */
+  if(garRevele(id)){
+   ev.preventDefault();
+   if(history.replaceState)history.replaceState(null,'','#'+id);
+   /* 'instant' et non 'smooth' : le devoilement lance une animation de 0,55 s qui
+      deplace les blocs (translateY), et un defilement anime pendant ce temps se
+      faisait annuler — mesure : le scroll restait a 0. On attend la fin du
+      devoilement, puis on se pose d'un coup. */
+   setTimeout(function(){c.scrollIntoView({behavior:'instant',block:'start'});},600);}});
  /* ⚠ ARRIVER AVEC UNE ANCRE DANS L'URL. Le clic INTERNE etait traite, pas l'arrivee
     depuis l'exterieur : mesure du 25/08/2026, ouvrir pmo-laboratory.com/#guides
     laissait la section a une hauteur de ZERO et le bouton « Acheter » invisible. Tout
@@ -1042,7 +1064,7 @@ document.addEventListener('DOMContentLoaded',function(){
   var id=(location.hash||'').slice(1);if(!id)return;
   if(garRevele(id)){var c=document.getElementById(id);
    if(c)setTimeout(function(){
-     c.scrollIntoView({behavior:'smooth',block:'start'});},120);}}
+     c.scrollIntoView({behavior:'instant',block:'start'});},600);}}
  garHash();
  window.addEventListener('hashchange',garHash);});
 function ctcReveal(){

@@ -1056,6 +1056,15 @@ document.addEventListener('DOMContentLoaded',function(){
   if(h&&h.id)grp=h.id;
   if(grp)el.setAttribute('data-grp',grp);}
  document.body.classList.add('garde');
+ /* revele la section qui contient `id`, et rend true si elle etait gardee */
+ function garRevele(id){
+  var c=document.getElementById(id);if(!c)return false;
+  var g=c.closest?c.closest('[data-grp]'):null;if(!g)return false;
+  var grp=g.getAttribute('data-grp');
+  var els=document.querySelectorAll('[data-grp="'+grp+'"]');
+  for(var i=0;i<els.length;i++)els[i].classList.add('gvu');
+  document.body.classList.add('pvu');
+  return true;}
  /* un lien interne vers une section gardee la revele (pied de page, CTA) ;
     defaultPrevented = lien deja gere en JS, on ne revele rien par accident */
  document.addEventListener('click',function(ev){
@@ -1063,12 +1072,19 @@ document.addEventListener('DOMContentLoaded',function(){
   var a=ev.target.closest?ev.target.closest('a[href^="#"]'):null;
   if(!a)return;
   var id=a.getAttribute('href').slice(1);if(!id)return;
-  var c=document.getElementById(id);if(!c)return;
-  var g=c.closest('[data-grp]');if(!g)return;
-  var grp=g.getAttribute('data-grp');
-  var els=document.querySelectorAll('[data-grp="'+grp+'"]');
-  for(var i=0;i<els.length;i++)els[i].classList.add('gvu');
-  document.body.classList.add('pvu');});});
+  garRevele(id);});
+ /* ⚠ ARRIVER AVEC UNE ANCRE DANS L'URL. Le clic INTERNE etait traite, pas l'arrivee
+    depuis l'exterieur : mesure du 25/08/2026, ouvrir pmo-laboratory.com/#guides
+    laissait la section a une hauteur de ZERO et le bouton « Acheter » invisible. Tout
+    lien vers le guide — un post LinkedIn, un e-mail, le CTA d'une autre page —
+    atterrissait donc sur un haut de page muet. On revele, puis on amene. */
+ function garHash(){
+  var id=(location.hash||'').slice(1);if(!id)return;
+  if(garRevele(id)){var c=document.getElementById(id);
+   if(c)setTimeout(function(){
+     c.scrollIntoView({behavior:'smooth',block:'start'});},120);}}
+ garHash();
+ window.addEventListener('hashchange',garHash);});
 function ctcReveal(){
  var w=document.getElementById('fluxwrap');if(!w)return false;
  w.classList.add('on');

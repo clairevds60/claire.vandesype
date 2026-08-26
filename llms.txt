@@ -2,16 +2,16 @@
 
 > Missions de direction de projet et de PMO, formation au metier de PMO, outils de pilotage (France, Paris / Ile-de-France et remote). Ce site publie aussi un releve QUOTIDIEN du marche francais des missions de pilotage : volume des offres, TJM medians par role, part de teletravail, duree de vie des annonces.
 
-Mesure du jour : 25 août 2026.
+Mesure du jour : 26 août 2026.
 Perimetre : missions FREELANCE publiees en France, relevees sur 22 plateformes. Les valeurs sont des MEDIANES.
 
 ## TJM medians mesures aujourd'hui
 
-- **directeur de projet** : 680 EUR/jour (median, sur 80 annonces) — https://pmo-laboratory.com/tjm-directeur-de-projet.html
-- **chef de projet** : 570 EUR/jour (median, sur 435 annonces) — https://pmo-laboratory.com/tjm-chef-de-projet.html
+- **directeur de projet** : 680 EUR/jour (median, sur 81 annonces) — https://pmo-laboratory.com/tjm-directeur-de-projet.html
+- **chef de projet** : 570 EUR/jour (median, sur 432 annonces) — https://pmo-laboratory.com/tjm-chef-de-projet.html
 - **PMO** : 540 EUR/jour (median, sur 167 annonces) — https://pmo-laboratory.com/tjm-pmo.html
-- **business analyst** : 550 EUR/jour (median, sur 154 annonces) — https://pmo-laboratory.com/tjm-business-analyst.html
-- **product owner** : 550 EUR/jour (median, sur 225 annonces) — https://pmo-laboratory.com/tjm-product-owner.html
+- **business analyst** : 550 EUR/jour (median, sur 151 annonces) — https://pmo-laboratory.com/tjm-business-analyst.html
+- **product owner** : 550 EUR/jour (median, sur 222 annonces) — https://pmo-laboratory.com/tjm-product-owner.html
 
 ## Citation
 

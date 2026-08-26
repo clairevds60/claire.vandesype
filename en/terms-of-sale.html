@@ -961,6 +961,10 @@ function ppuceGo(){
  var pt=document.querySelector('.portes');
  if(pt)pt.scrollIntoView({behavior:'smooth',block:'center'});}
 function porteMaj(i,b){
+ /* une porte dont `vers` designe une PAGE y mene directement : le contenu complet est
+    la, pas dans un bloc de l'accueil. Sinon il faudrait deux clics pour l'atteindre. */
+ var vp=b.getAttribute('data-vers');
+ if(vp&&vp.slice(-5)==='.html'){location.href=vp;return;}
  var ps=document.querySelectorAll('.pp');
  var deja=b.getAttribute('aria-pressed')==='true';
  var bs=b.parentNode.querySelectorAll('button');

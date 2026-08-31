@@ -57,4 +57,4 @@ Allow: /
 User-agent: Timpibot
 Allow: /
 
-Sitemap: https://pmo-laboratory.com/sitemap.xml
+Sitemap: https://clairevandesype.com/sitemap.xml

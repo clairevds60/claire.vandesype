@@ -1,4 +1,4 @@
-# Claire Van De Sype — pmo-laboratory.com
+# Claire Van De Sype — clairevandesype.com
 
 > Missions de direction de projet et de PMO, formation au metier de PMO, outils de pilotage (France, Paris / Ile-de-France et remote). Ce site publie aussi un releve QUOTIDIEN du marche francais des missions de pilotage : volume des offres, TJM medians par role, part de teletravail, duree de vie des annonces.
 
@@ -7,24 +7,24 @@ Perimetre : missions FREELANCE publiees en France, relevees sur 23 plateformes. 
 
 ## TJM medians mesures aujourd'hui
 
-- **directeur de projet** : 700 EUR/jour (median, sur 69 annonces) — https://pmo-laboratory.com/tjm-directeur-de-projet.html
-- **chef de projet** : 560 EUR/jour (median, sur 376 annonces) — https://pmo-laboratory.com/tjm-chef-de-projet.html
-- **PMO** : 540 EUR/jour (median, sur 142 annonces) — https://pmo-laboratory.com/tjm-pmo.html
-- **business analyst** : 550 EUR/jour (median, sur 153 annonces) — https://pmo-laboratory.com/tjm-business-analyst.html
-- **product owner** : 550 EUR/jour (median, sur 206 annonces) — https://pmo-laboratory.com/tjm-product-owner.html
+- **directeur de projet** : 700 EUR/jour (median, sur 70 annonces) — https://clairevandesype.com/tjm-directeur-de-projet.html
+- **chef de projet** : 560 EUR/jour (median, sur 390 annonces) — https://clairevandesype.com/tjm-chef-de-projet.html
+- **PMO** : 550 EUR/jour (median, sur 144 annonces) — https://clairevandesype.com/tjm-pmo.html
+- **business analyst** : 550 EUR/jour (median, sur 158 annonces) — https://clairevandesype.com/tjm-business-analyst.html
+- **product owner** : 550 EUR/jour (median, sur 210 annonces) — https://clairevandesype.com/tjm-product-owner.html
 
 ## Citation
 
-Ces chiffres sont libres de citation, y compris commerciale, a condition de nommer la source et de faire un lien vers la page d'origine. Phrase de citation prete a l'emploi et licence complete : https://pmo-laboratory.com/donnees.html
+Ces chiffres sont libres de citation, y compris commerciale, a condition de nommer la source et de faire un lien vers la page d'origine. Phrase de citation prete a l'emploi et licence complete : https://clairevandesype.com/donnees.html
 
 ## Pages principales
 
-- Accueil (qui je suis, mes missions, mes recommandations) : https://pmo-laboratory.com/
-- Les chiffres du marche, libres de citation : https://pmo-laboratory.com/donnees.html
-- Guides a 29 EUR TTC (en preparation) et offres de formation : https://pmo-laboratory.com/#guides
-- Version anglaise : https://pmo-laboratory.com/en/
-- Conditions d'utilisation : https://pmo-laboratory.com/conditions.html
-- Confidentialite : https://pmo-laboratory.com/confidentialite.html
+- Accueil (qui je suis, mes missions, mes recommandations) : https://clairevandesype.com/
+- Les chiffres du marche, libres de citation : https://clairevandesype.com/donnees.html
+- Guides a 29 EUR TTC (en preparation) et offres de formation : https://clairevandesype.com/#guides
+- Version anglaise : https://clairevandesype.com/en/
+- Conditions d'utilisation : https://clairevandesype.com/conditions.html
+- Confidentialite : https://clairevandesype.com/confidentialite.html
 
 ## Contact
 

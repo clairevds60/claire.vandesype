@@ -11,7 +11,7 @@ Perimetre : missions FREELANCE publiees en France, relevees sur 23 plateformes. 
 - **chef de projet** : 550 EUR/jour (median, sur 429 annonces) — https://clairevandesype.com/tjm-chef-de-projet.html
 - **PMO** : 550 EUR/jour (median, sur 137 annonces) — https://clairevandesype.com/tjm-pmo.html
 - **business analyst** : 550 EUR/jour (median, sur 172 annonces) — https://clairevandesype.com/tjm-business-analyst.html
-- **product owner** : 550 EUR/jour (median, sur 212 annonces) — https://clairevandesype.com/tjm-product-owner.html
+- **product owner** : 550 EUR/jour (median, sur 213 annonces) — https://clairevandesype.com/tjm-product-owner.html
 
 ## Citation
 

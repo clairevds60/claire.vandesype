@@ -2,16 +2,16 @@
 
 > Missions de direction de projet et de PMO, formation au metier de PMO, outils de pilotage (France, Paris / Ile-de-France et remote). Ce site publie aussi un releve QUOTIDIEN du marche francais des missions de pilotage : volume des offres, TJM medians par role, part de teletravail, duree de vie des annonces.
 
-Mesure du jour : 4 septembre 2026.
+Mesure du jour : 5 septembre 2026.
 Perimetre : missions FREELANCE publiees en France, relevees sur 23 plateformes. Les valeurs sont des MEDIANES.
 
 ## TJM medians mesures aujourd'hui
 
-- **directeur de projet** : 750 EUR/jour (median, sur 78 annonces) — https://clairevandesype.com/tjm-directeur-de-projet.html
-- **chef de projet** : 550 EUR/jour (median, sur 448 annonces) — https://clairevandesype.com/tjm-chef-de-projet.html
-- **PMO** : 550 EUR/jour (median, sur 151 annonces) — https://clairevandesype.com/tjm-pmo.html
-- **business analyst** : 550 EUR/jour (median, sur 204 annonces) — https://clairevandesype.com/tjm-business-analyst.html
-- **product owner** : 550 EUR/jour (median, sur 236 annonces) — https://clairevandesype.com/tjm-product-owner.html
+- **directeur de projet** : 750 EUR/jour (median, sur 79 annonces) — https://clairevandesype.com/tjm-directeur-de-projet.html
+- **chef de projet** : 550 EUR/jour (median, sur 422 annonces) — https://clairevandesype.com/tjm-chef-de-projet.html
+- **PMO** : 550 EUR/jour (median, sur 148 annonces) — https://clairevandesype.com/tjm-pmo.html
+- **business analyst** : 550 EUR/jour (median, sur 202 annonces) — https://clairevandesype.com/tjm-business-analyst.html
+- **product owner** : 550 EUR/jour (median, sur 231 annonces) — https://clairevandesype.com/tjm-product-owner.html
 
 ## Citation
 

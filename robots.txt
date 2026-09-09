@@ -1,60 +1,33 @@
+# Les moteurs de recherche restent autorises.
 User-agent: *
 Allow: /
 
-# Les robots des assistants sont explicitement bienvenus : les
-# mesures publiees ici sont faites pour etre citees (voir /donnees.html).
+# Opposition aux collectes d'entrainement ; ceci n'est pas un controle d'acces.
 User-agent: GPTBot
-Allow: /
-
-User-agent: OAI-SearchBot
-Allow: /
-
-User-agent: ChatGPT-User
-Allow: /
+Disallow: /
 
 User-agent: ClaudeBot
-Allow: /
+Disallow: /
 
 User-agent: anthropic-ai
-Allow: /
-
-User-agent: Claude-Web
-Allow: /
-
-User-agent: PerplexityBot
-Allow: /
-
-User-agent: Perplexity-User
-Allow: /
-
-User-agent: Google-Extended
-Allow: /
-
-User-agent: Applebot-Extended
-Allow: /
+Disallow: /
 
 User-agent: CCBot
-Allow: /
+Disallow: /
 
-User-agent: Bingbot
-Allow: /
+User-agent: Google-Extended
+Disallow: /
 
-User-agent: Amazonbot
-Allow: /
+User-agent: Applebot-Extended
+Disallow: /
 
 User-agent: meta-externalagent
-Allow: /
-
-User-agent: YouBot
-Allow: /
+Disallow: /
 
 User-agent: cohere-ai
-Allow: /
+Disallow: /
 
 User-agent: Diffbot
-Allow: /
-
-User-agent: Timpibot
-Allow: /
+Disallow: /
 
 Sitemap: https://clairevandesype.com/sitemap.xml

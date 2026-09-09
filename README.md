@@ -37,6 +37,14 @@ Chaque personne doit utiliser son propre compte GitHub. La propriétaire peut aj
 
 ## Contrôles avant publication
 
+- Les documents PDF sont proposés sous licence : **ne pas ajouter de PDF en clair**,
+  de copie ZIP ni d'archive privée. Les liens de demande de licence remplacent les
+  anciens téléchargements. La bibliothèque chiffrée reste en service.
+- Les créations originales sont couvertes par [la notice de droits](LICENSE.md).
+  Les polices conservent [leurs licences propres](licences/README.md).
+- Le générateur local contrôle les documents avant publication. Les changements
+  effectués directement sur GitHub doivent respecter cette même règle.
+
 - Conserver le domaine et les fichiers de vérification, sauf changement volontaire de configuration.
 - Vérifier les titres, descriptions, adresses canoniques et liens entre les langues lorsqu’une page évolue.
 - Mettre à jour le plan du site lorsqu’une page destinée à être indexée est ajoutée ou retirée.
